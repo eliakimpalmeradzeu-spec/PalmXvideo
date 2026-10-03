@@ -38,7 +38,7 @@
       touch-action: manipulation;
     }
 
-    /* ÉCRAN D'ACCUEIL (SPLASH SCREEN) */
+    /* ÉCRAN D'ACCUEIL */
     #splash-screen {
       position: fixed;
       top: 0;
@@ -400,7 +400,7 @@
       word-break: break-all;
     }
 
-    /* MODALES & TABLES DE CHOIX */
+    /* MODALES */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -693,172 +693,46 @@
     }
 
     @media (max-width: 600px) {
-      .header-search {
-        padding: 10px 10px;
-        gap: 7px;
-      }
-
-      .search-input {
-        min-width: 0;
-        padding: 9px 38px 9px 13px;
-        font-size: 0.88rem;
-      }
-
-      .lang-btn {
-        padding: 8px 10px;
-        font-size: 0.78rem;
-      }
-
-      .content-area {
-        padding: 14px 10px calc(20px + env(safe-area-inset-bottom));
-      }
-
-      .media-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .media-card {
-        border-radius: 11px;
-      }
-
-      .media-cover {
-        height: min(52vw, 250px);
-        min-height: 150px;
-      }
-
-      .media-info {
-        padding: 9px 10px;
-        gap: 4px;
-      }
-
-      .media-title {
-        font-size: 0.88rem;
-      }
-
-      .media-sub {
-        font-size: 0.72rem;
-      }
-
-      .media-badge {
-        top: 7px;
-        left: 7px;
-        padding: 3px 7px;
-        font-size: 0.65rem;
-      }
-
-      .bottom-nav {
-        min-height: 62px;
-        padding-left: 4px;
-        padding-right: 4px;
-      }
-
-      .nav-btn {
-        min-width: 0;
-        padding: 3px 2px;
-        font-size: 0.70rem;
-      }
-
-      .nav-btn svg {
-        width: 20px;
-        height: 20px;
-      }
-
-      .modal-overlay {
-        align-items: flex-start;
-        overflow-y: auto;
-        padding-top: max(10px, env(safe-area-inset-top));
-        padding-bottom: max(10px, env(safe-area-inset-bottom));
-      }
-
-      .modal-card {
-        width: 100%;
-        max-width: 550px;
-        margin: 0 auto;
-        padding: 20px 15px;
-        border-radius: 16px;
-        max-height: calc(100dvh - 20px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-      }
-
-      .modal-close {
-        top: 10px;
-        right: 12px;
-        padding: 6px;
-      }
-
-      .publish-type-table {
-        border-spacing: 6px;
-      }
-
-      .type-box {
-        padding: 15px 8px;
-      }
-
-      .series-header {
-        gap: 10px;
-      }
-
-      .series-poster {
-        width: 90px;
-        height: 130px;
-      }
-
-      .episode-card {
-        align-items: stretch;
-        flex-direction: column;
-      }
-
-      .play-ep-btn {
-        width: 100%;
-        padding: 9px 12px;
-      }
-
-      #view-title {
-        align-self: flex-start;
-        font-size: 1.1rem !important;
-        margin-bottom: 6px !important;
-      }
-
-      .logo-container {
-        max-width: 100%;
-        margin-bottom: 28px;
-      }
-
-      .logo-text {
-        font-size: clamp(2.2rem, 12vw, 3.8rem);
-      }
-
-      .bankai-x {
-        width: clamp(40px, 14vw, 55px);
-        height: clamp(40px, 14vw, 55px);
-      }
-
-      .enter-btn {
-        max-width: 90vw;
-        padding: 12px 24px;
-        font-size: 1rem;
-      }
+      .header-search { padding: 10px 10px; gap: 7px; }
+      .search-input { min-width: 0; padding: 9px 38px 9px 13px; font-size: 0.88rem; }
+      .lang-btn { padding: 8px 10px; font-size: 0.78rem; }
+      .content-area { padding: 14px 10px calc(20px + env(safe-area-inset-bottom)); }
+      .media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+      .media-card { border-radius: 11px; }
+      .media-cover { height: min(52vw, 250px); min-height: 150px; }
+      .media-info { padding: 9px 10px; gap: 4px; }
+      .media-title { font-size: 0.88rem; }
+      .media-sub { font-size: 0.72rem; }
+      .media-badge { top: 7px; left: 7px; padding: 3px 7px; font-size: 0.65rem; }
+      .bottom-nav { min-height: 62px; padding-left: 4px; padding-right: 4px; }
+      .nav-btn { min-width: 0; padding: 3px 2px; font-size: 0.70rem; }
+      .nav-btn svg { width: 20px; height: 20px; }
+      .modal-overlay { align-items: flex-start; overflow-y: auto; padding-top: max(10px, env(safe-area-inset-top)); padding-bottom: max(10px, env(safe-area-inset-bottom)); }
+      .modal-card { width: 100%; max-width: 550px; margin: 0 auto; padding: 20px 15px; border-radius: 16px; max-height: calc(100dvh - 20px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+      .modal-close { top: 10px; right: 12px; padding: 6px; }
+      .publish-type-table { border-spacing: 6px; }
+      .type-box { padding: 15px 8px; }
+      .series-header { gap: 10px; }
+      .series-poster { width: 90px; height: 130px; }
+      .episode-card { align-items: stretch; flex-direction: column; }
+      .play-ep-btn { width: 100%; padding: 9px 12px; }
+      #view-title { align-self: flex-start; font-size: 1.1rem !important; margin-bottom: 6px !important; }
+      .logo-container { max-width: 100%; margin-bottom: 28px; }
+      .logo-text { font-size: clamp(2.2rem, 12vw, 3.8rem); }
+      .bankai-x { width: clamp(40px, 14vw, 55px); height: clamp(40px, 14vw, 55px); }
+      .enter-btn { max-width: 90vw; padding: 12px 24px; font-size: 1rem; }
     }
 
     @media (max-width: 380px) {
-      .media-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .media-cover {
-        height: 62vw;
-      }
-
-      .nav-btn {
-        font-size: 0.64rem;
-      }
+      .media-grid { grid-template-columns: 1fr; }
+      .media-cover { height: 62vw; }
+      .nav-btn { font-size: 0.64rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- 1. ÉCRAN D'ACCUEIL -->
+  <!-- ÉCRAN D'ACCUEIL -->
   <div id="splash-screen">
     <div class="logo-container">
       <span class="logo-text">Palm</span>
@@ -877,7 +751,7 @@
     <button class="enter-btn" onclick="enterSite()">Entrer sur le site</button>
   </div>
 
-  <!-- 2. APPLICATION PRINCIPALE -->
+  <!-- APPLICATION PRINCIPALE -->
   <div id="main-app">
     
     <header class="header-search">
@@ -899,9 +773,7 @@
 
     <main class="content-area">
       <h2 id="view-title" style="font-size: 1.3rem; margin-bottom: 15px; color: #fff;">Catalogue (Menu)</h2>
-      <div class="media-grid" id="media-container">
-        <!-- Les Séries et Films s'affichent ici -->
-      </div>
+      <div class="media-grid" id="media-container"></div>
     </main>
 
     <nav class="bottom-nav">
@@ -941,12 +813,11 @@
 
   </div>
 
-  <!-- 3. FENÊTRE SELECTION PUBLICATION -->
+  <!-- PUBLICATION MODAL -->
   <div class="modal-overlay" id="publish-modal">
     <div class="modal-card">
       <button class="modal-close" onclick="closePublishModal()">✕</button>
 
-      <!-- ÉTAPE 1: TABLEAU DE CHOIX -->
       <div id="publish-step-choice">
         <h3 style="text-align: center; color: #ff0033; margin-bottom: 10px;">Que souhaitez-vous publier ?</h3>
         <table class="publish-type-table">
@@ -967,7 +838,7 @@
         </table>
       </div>
 
-      <!-- ÉTAPE 2A: FORMULAIRE FILM -->
+      <!-- FORMULAIRE FILM -->
       <div id="publish-step-film" style="display: none;">
         <button onclick="backToPublishChoice()" style="background:none; border:none; color:#888; cursor:pointer; margin-bottom:10px;">← Retour</button>
         <h3 style="color: #0088ff; margin-bottom: 15px;">Publier un Film</h3>
@@ -984,51 +855,42 @@
           </div>
 
           <div class="form-group">
-            <label>Affiche / Couverture du film (Fichier ou URL)</label>
-            <input type="file" id="film-cover-file" class="form-input" accept="image/*">
-            <input type="url" id="film-cover-url" class="form-input" placeholder="OU URL de l'image" style="margin-top:5px;">
+            <label>Affiche / Couverture du film (URL ou Fichier)</label>
+            <input type="url" id="film-cover-url" class="form-input" placeholder="URL de l'image (Recommandé pour tous les appareils)">
+            <input type="file" id="film-cover-file" class="form-input" accept="image/*" style="margin-top:5px;">
           </div>
 
-          <!-- AUDIO FILM -->
           <div class="section-title">🔊 Audio / Langues de la vidéo</div>
           <div class="form-group">
             <label>Vidéo VF / Voice-Over (Français)</label>
-            <input type="file" id="film-video-vf-file" class="form-input" accept="video/*">
-            <input type="url" id="film-video-vf-url" class="form-input" placeholder="OU URL de la vidéo VF" style="margin-top:4px;">
+            <input type="url" id="film-video-vf-url" class="form-input" placeholder="URL de la vidéo VF (Ex: https://site.com/video.mp4)">
+            <input type="file" id="film-video-vf-file" class="form-input" accept="video/*" style="margin-top:4px;">
           </div>
           <div class="form-group">
             <label>Vidéo Version Anglaise (Optionnel)</label>
-            <input type="file" id="film-video-en-file" class="form-input" accept="video/*">
-            <input type="url" id="film-video-en-url" class="form-input" placeholder="OU URL de la vidéo Anglais" style="margin-top:4px;">
+            <input type="url" id="film-video-en-url" class="form-input" placeholder="URL de la vidéo Anglais">
+            <input type="file" id="film-video-en-file" class="form-input" accept="video/*" style="margin-top:4px;">
           </div>
           <div class="form-group">
             <label>Vidéo Version Japonaise (Optionnel)</label>
-            <input type="file" id="film-video-ja-file" class="form-input" accept="video/*">
-            <input type="url" id="film-video-ja-url" class="form-input" placeholder="OU URL de la vidéo Japonais" style="margin-top:4px;">
+            <input type="url" id="film-video-ja-url" class="form-input" placeholder="URL de la vidéo Japonais">
+            <input type="file" id="film-video-ja-file" class="form-input" accept="video/*" style="margin-top:4px;">
           </div>
 
-          <!-- SOUS-TITRES FILM -->
           <div class="section-title">💬 Sous-titres (fichiers .vtt ou URLs)</div>
           <div class="form-group">
             <label>Sous-titres Français (.vtt)</label>
-            <input type="file" id="film-sub-fr-file" class="form-input" accept=".vtt">
-            <input type="url" id="film-sub-fr-url" class="form-input" placeholder="OU URL du fichier .vtt FR" style="margin-top:4px;">
+            <input type="url" id="film-sub-fr-url" class="form-input" placeholder="URL du fichier .vtt FR">
+            <input type="file" id="film-sub-fr-file" class="form-input" accept=".vtt" style="margin-top:4px;">
           </div>
           <div class="form-group">
             <label>Sous-titres Anglais (.vtt)</label>
-            <input type="file" id="film-sub-en-file" class="form-input" accept=".vtt">
-            <input type="url" id="film-sub-en-url" class="form-input" placeholder="OU URL du fichier .vtt EN" style="margin-top:4px;">
-          </div>
-          <div class="form-group">
-            <label>Sous-titres Japonais (.vtt)</label>
-            <input type="file" id="film-sub-ja-file" class="form-input" accept=".vtt">
-            <input type="url" id="film-sub-ja-url" class="form-input" placeholder="OU URL du fichier .vtt JA" style="margin-top:4px;">
+            <input type="url" id="film-sub-en-url" class="form-input" placeholder="URL du fichier .vtt EN">
+            <input type="file" id="film-sub-en-file" class="form-input" accept=".vtt" style="margin-top:4px;">
           </div>
 
-          <!-- RESOLUTION -->
-          <div class="section-title">📺 Qualité de résolution de référence</div>
+          <div class="section-title">📺 Qualité de référence</div>
           <div class="form-group">
-            <label>Résolution principale de la vidéo</label>
             <select id="film-quality-select" class="form-select">
               <option value="1080p">1080p (Full HD)</option>
               <option value="720p">720p (HD)</option>
@@ -1041,7 +903,7 @@
         </form>
       </div>
 
-      <!-- ÉTAPE 2B: FORMULAIRE SÉRIE -->
+      <!-- FORMULAIRE SÉRIE -->
       <div id="publish-step-series" style="display: none;">
         <button onclick="backToPublishChoice()" style="background:none; border:none; color:#888; cursor:pointer; margin-bottom:10px;">← Retour</button>
         <h3 style="color: #ff0033; margin-bottom: 15px;">Publier une Série</h3>
@@ -1058,9 +920,9 @@
           </div>
 
           <div class="form-group">
-            <label>Image de la série (Affiche / Couverture)</label>
-            <input type="file" id="series-cover-file" class="form-input" accept="image/*">
-            <input type="url" id="series-cover-url" class="form-input" placeholder="OU URL de l'image" style="margin-top:5px;">
+            <label>Image de la série (Affiche)</label>
+            <input type="url" id="series-cover-url" class="form-input" placeholder="URL de l'image">
+            <input type="file" id="series-cover-file" class="form-input" accept="image/*" style="margin-top:5px;">
           </div>
 
           <div class="form-group">
@@ -1068,7 +930,6 @@
             <input type="number" id="series-seasons-count" class="form-input" min="1" max="20" value="1" onchange="updateSeasonBuilder()" onkeyup="updateSeasonBuilder()">
           </div>
 
-          <!-- GESTIONNAIRE D'ÉPISODES PAR SAISON -->
           <div class="add-ep-box">
             <label style="font-size:0.85rem; color:#ffcc00; font-weight:600;">Ajouter des épisodes aux saisons :</label>
             
@@ -1082,43 +943,25 @@
               <input type="text" id="ep-title" class="form-input" placeholder="Ex: Épisode 1 - Le commencement">
             </div>
 
-            <!-- AUDIO EPISODE -->
             <div class="section-title">🔊 Audio Épisode</div>
             <div class="form-group">
-              <label>Vidéo VF / Voice-Over (Français)</label>
-              <input type="file" id="ep-vf-file" class="form-input" accept="video/*">
-              <input type="url" id="ep-vf-url" class="form-input" placeholder="OU URL vidéo VF" style="margin-top:4px;">
+              <label>Vidéo VF (Français)</label>
+              <input type="url" id="ep-vf-url" class="form-input" placeholder="URL vidéo VF">
+              <input type="file" id="ep-vf-file" class="form-input" accept="video/*" style="margin-top:4px;">
             </div>
             <div class="form-group">
               <label>Vidéo Anglais (Optionnel)</label>
-              <input type="file" id="ep-en-file" class="form-input" accept="video/*">
-              <input type="url" id="ep-en-url" class="form-input" placeholder="OU URL vidéo Anglais" style="margin-top:4px;">
-            </div>
-            <div class="form-group">
-              <label>Vidéo Japonais (Optionnel)</label>
-              <input type="file" id="ep-ja-file" class="form-input" accept="video/*">
-              <input type="url" id="ep-ja-url" class="form-input" placeholder="OU URL vidéo Japonais" style="margin-top:4px;">
+              <input type="url" id="ep-en-url" class="form-input" placeholder="URL vidéo Anglais">
+              <input type="file" id="ep-en-file" class="form-input" accept="video/*" style="margin-top:4px;">
             </div>
 
-            <!-- SOUS-TITRES EPISODE -->
             <div class="section-title">💬 Sous-titres Épisode (.vtt)</div>
             <div class="form-group">
               <label>Sous-titres FR</label>
-              <input type="file" id="ep-sub-fr-file" class="form-input" accept=".vtt">
-              <input type="url" id="ep-sub-fr-url" class="form-input" placeholder="OU URL .vtt FR" style="margin-top:4px;">
-            </div>
-            <div class="form-group">
-              <label>Sous-titres EN</label>
-              <input type="file" id="ep-sub-en-file" class="form-input" accept=".vtt">
-              <input type="url" id="ep-sub-en-url" class="form-input" placeholder="OU URL .vtt EN" style="margin-top:4px;">
-            </div>
-            <div class="form-group">
-              <label>Sous-titres JA</label>
-              <input type="file" id="ep-sub-ja-file" class="form-input" accept=".vtt">
-              <input type="url" id="ep-sub-ja-url" class="form-input" placeholder="OU URL .vtt JA" style="margin-top:4px;">
+              <input type="url" id="ep-sub-fr-url" class="form-input" placeholder="URL .vtt FR">
+              <input type="file" id="ep-sub-fr-file" class="form-input" accept=".vtt" style="margin-top:4px;">
             </div>
 
-            <!-- QUALITE EPISODE -->
             <div class="section-title">📺 Qualité de référence</div>
             <div class="form-group">
               <select id="ep-quality-select" class="form-select">
@@ -1141,7 +984,7 @@
     </div>
   </div>
 
-  <!-- 4. MODALE CONSULTATION DE SÉRIE -->
+  <!-- CONSULTATION SÉRIE -->
   <div class="modal-overlay" id="series-viewer-modal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeSeriesViewer()">✕</button>
@@ -1155,11 +998,9 @@
         </div>
       </div>
 
-      <!-- LECTEUR DU SÉLECTIONNÉ -->
       <div id="active-player-container" style="display:none; margin-bottom:15px;">
         <video id="series-active-player" class="video-player" controls style="width:100%; height:200px; background:#000; border-radius:10px;"></video>
         
-        <!-- BARRE D'OPTIONS D'ÉCOUTE ET QUALITÉ -->
         <div class="player-controls-bar">
           <div class="player-ctrl-group">
             <label>🗣️ Langue Audio</label>
@@ -1186,64 +1027,7 @@
     </div>
   </div>
 
-  <!-- 5. MODALE AJOUT DE SÉRIES/ÉPISODES EXISTANTE -->
-  <div class="modal-overlay" id="add-ep-modal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeAddEpModal()">✕</button>
-      <h3 style="color:#00ff88; margin-bottom:15px;">Rajouter des épisodes à la série</h3>
-
-      <div class="form-group">
-        <label>Sélectionner la saison</label>
-        <select id="add-more-season-select" class="form-select"></select>
-      </div>
-
-      <div class="form-group" style="margin-top:10px;">
-        <label>Titre du nouvel épisode</label>
-        <input type="text" id="add-more-ep-title" class="form-input" placeholder="Titre de l'épisode">
-      </div>
-
-      <!-- AUDIO -->
-      <div class="section-title">🔊 Audio Épisode</div>
-      <div class="form-group">
-        <label>Vidéo VF (Français)</label>
-        <input type="file" id="add-more-ep-vf-file" class="form-input" accept="video/*">
-        <input type="url" id="add-more-ep-vf-url" class="form-input" placeholder="OU URL vidéo VF" style="margin-top:4px;">
-      </div>
-      <div class="form-group">
-        <label>Vidéo Anglais</label>
-        <input type="file" id="add-more-ep-en-file" class="form-input" accept="video/*">
-        <input type="url" id="add-more-ep-en-url" class="form-input" placeholder="OU URL vidéo EN" style="margin-top:4px;">
-      </div>
-      <div class="form-group">
-        <label>Vidéo Japonais</label>
-        <input type="file" id="add-more-ep-ja-file" class="form-input" accept="video/*">
-        <input type="url" id="add-more-ep-ja-url" class="form-input" placeholder="OU URL vidéo JA" style="margin-top:4px;">
-      </div>
-
-      <!-- SOUS TITRES -->
-      <div class="section-title">💬 Sous-titres (.vtt)</div>
-      <div class="form-group">
-        <label>Sous-titre FR</label>
-        <input type="file" id="add-more-sub-fr-file" class="form-input" accept=".vtt">
-        <input type="url" id="add-more-sub-fr-url" class="form-input" placeholder="OU URL .vtt FR" style="margin-top:4px;">
-      </div>
-      <div class="form-group">
-        <label>Sous-titre EN</label>
-        <input type="file" id="add-more-sub-en-file" class="form-input" accept=".vtt">
-        <input type="url" id="add-more-sub-en-url" class="form-input" placeholder="OU URL .vtt EN" style="margin-top:4px;">
-      </div>
-      <div class="form-group">
-        <label>Sous-titre JA</label>
-        <input type="file" id="add-more-sub-ja-file" class="form-input" accept=".vtt">
-        <input type="url" id="add-more-sub-ja-url" class="form-input" placeholder="OU URL .vtt JA" style="margin-top:4px;">
-      </div>
-
-      <p id="add-more-msg" class="auth-msg"></p>
-      <button type="button" onclick="saveNewEpisodeToSeries()" class="auth-submit-btn">Enregistrer l'épisode</button>
-    </div>
-  </div>
-
-  <!-- 6. MODALE CONSULTATION DE FILM -->
+  <!-- CONSULTATION FILM -->
   <div class="modal-overlay" id="film-viewer-modal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeFilmViewer()">✕</button>
@@ -1251,7 +1035,6 @@
       <h2 id="view-film-title" style="color:#fff; margin-bottom:10px;"></h2>
       <video id="film-active-player" controls style="width:100%; height:220px; background:#000; border-radius:10px;"></video>
       
-      <!-- BARRE D'OPTIONS AUDIO, SOUS-TITRES & QUALITÉ FILM -->
       <div class="player-controls-bar">
         <div class="player-ctrl-group">
           <label>🗣️ Langue Audio</label>
@@ -1272,7 +1055,7 @@
     </div>
   </div>
 
-  <!-- 7. FENÊTRE CONNEXION / INSCRIPTION -->
+  <!-- AUTHENTIFICATION -->
   <div class="modal-overlay" id="auth-modal" onclick="closeAuthModalOnOutsideClick(event)">
     <div class="modal-card">
       <button class="modal-close" onclick="closeAuthModal()">✕</button>
@@ -1349,6 +1132,12 @@
       }
 
       renderMediaGrid();
+    }
+
+    function getSrcFromInputs(fileId, urlId) {
+      const url = document.getElementById(urlId)?.value.trim();
+      const file = document.getElementById(fileId)?.files[0];
+      return url || (file ? URL.createObjectURL(file) : null);
     }
 
     /* AUTHENTIFICATION */
@@ -1438,7 +1227,7 @@
       else openAuthModal();
     }
 
-    /* GESTION DE LA PUBLICATION */
+    /* PUBLICATION */
     function openPublishModal() {
       document.getElementById('account-dropdown').classList.remove('show');
       document.getElementById('publish-modal').classList.add('show');
@@ -1465,13 +1254,6 @@
       }
     }
 
-    function getSrcFromInputs(fileId, urlId) {
-      const file = document.getElementById(fileId)?.files[0];
-      const url = document.getElementById(urlId)?.value.trim();
-      return file ? URL.createObjectURL(file) : (url || null);
-    }
-
-    /* PUBLICATION FILM */
     function handlePublishFilm(event) {
       event.preventDefault();
       const title = document.getElementById('film-title').value.trim();
@@ -1484,14 +1266,13 @@
 
       const subFR = getSrcFromInputs('film-sub-fr-file', 'film-sub-fr-url');
       const subEN = getSrcFromInputs('film-sub-en-file', 'film-sub-en-url');
-      const subJA = getSrcFromInputs('film-sub-ja-file', 'film-sub-ja-url');
 
       const quality = document.getElementById('film-quality-select').value;
       const msgEl = document.getElementById('film-msg');
 
       if (!audioVF && !audioEN && !audioJA) {
         msgEl.className = 'auth-msg error';
-        msgEl.innerText = "Spécifiez au moins un fichier vidéo (ex: VF).";
+        msgEl.innerText = "Spécifiez au moins un lien/fichier vidéo.";
         return;
       }
 
@@ -1502,7 +1283,7 @@
         desc: desc,
         cover: coverSrc,
         audios: { vf: audioVF, en: audioEN, ja: audioJA },
-        subtitles: { fr: subFR, en: subEN, ja: subJA },
+        subtitles: { fr: subFR, en: subEN },
         quality: quality,
         author: localStorage.getItem('palmx_logged_in_user') || 'Admin',
         date: new Date().toLocaleDateString('fr-FR')
@@ -1520,7 +1301,6 @@
       }, 1000);
     }
 
-    /* PUBLICATION SÉRIE & SAISONS */
     function updateSeasonBuilder() {
       const count = parseInt(document.getElementById('series-seasons-count').value) || 1;
       const select = document.getElementById('series-season-select');
@@ -1549,16 +1329,12 @@
 
       const audioVF = getSrcFromInputs('ep-vf-file', 'ep-vf-url');
       const audioEN = getSrcFromInputs('ep-en-file', 'ep-en-url');
-      const audioJA = getSrcFromInputs('ep-ja-file', 'ep-ja-url');
 
       const subFR = getSrcFromInputs('ep-sub-fr-file', 'ep-sub-fr-url');
-      const subEN = getSrcFromInputs('ep-sub-en-file', 'ep-sub-en-url');
-      const subJA = getSrcFromInputs('ep-sub-ja-file', 'ep-sub-ja-url');
-
       const quality = document.getElementById('ep-quality-select').value;
 
-      if (!title || (!audioVF && !audioEN && !audioJA)) {
-        alert("Renseignez un titre et au moins une version vidéo (VF, EN ou JA).");
+      if (!title || (!audioVF && !audioEN)) {
+        alert("Renseignez un titre et au moins un lien vidéo.");
         return;
       }
 
@@ -1567,8 +1343,8 @@
         targetSeason.episodes.push({
           id: Date.now(),
           title: title,
-          audios: { vf: audioVF, en: audioEN, ja: audioJA },
-          subtitles: { fr: subFR, en: subEN, ja: subJA },
+          audios: { vf: audioVF, en: audioEN },
+          subtitles: { fr: subFR },
           quality: quality
         });
       }
@@ -1655,7 +1431,7 @@
             <img class="media-cover" src="${m.cover}" alt="${m.title}">
             <div class="media-info">
               <div class="media-title">${m.title}</div>
-              <div class="media-sub">${m.type === 'series' ? m.seasons.length + ' Saison(s)' : 'Film complet'}</div>
+              <div class="media-sub">${m.type === 'series' ? (m.seasons ? m.seasons.length : 0) + ' Saison(s)' : 'Film complet'}</div>
             </div>
           </div>
         `).join('');
@@ -1664,7 +1440,7 @@
         let downloads = JSON.parse(localStorage.getItem('palmx_downloads') || '[]');
 
         if (downloads.length === 0) {
-          container.innerHTML = `<p class="no-videos">Aucun téléchargement enregistré pour l'instant.</p>`;
+          container.innerHTML = `<p class="no-videos">Aucun téléchargement enregistré.</p>`;
           return;
         }
 
@@ -1680,7 +1456,7 @@
       }
     }
 
-    /* OUVERTURE DU LECTEUR POUR UN FILM ET CONFIGURATION AUDIO/ST/QUALITÉ */
+    /* CONSULTATION MEDIA */
     function openMediaDetails(mediaId) {
       let catalog = JSON.parse(localStorage.getItem('palmx_catalog') || '[]');
       let media = catalog.find(m => m.id === mediaId);
@@ -1706,16 +1482,11 @@
         document.getElementById('view-series-desc').innerText = media.desc || 'Aucune description.';
         document.getElementById('view-series-cover').src = media.cover;
 
-        const loggedUser = localStorage.getItem('palmx_logged_in_user');
-        const addMoreBtn = document.getElementById('add-more-ep-btn');
-        addMoreBtn.style.display = (loggedUser && loggedUser === ADMIN_EMAIL.toLowerCase()) ? 'inline-block' : 'none';
-
         renderSeriesSeasonsAndEpisodes(media, 1);
         document.getElementById('series-viewer-modal').classList.add('show');
       }
     }
 
-    /* LOGIQUE DU LECTEUR FILM */
     function setupFilmControls(film) {
       const audioSel = document.getElementById('film-audio-select');
       const subSel = document.getElementById('film-sub-select');
@@ -1723,23 +1494,18 @@
 
       audioSel.innerHTML = '';
       subSel.innerHTML = '<option value="off">Désactivés</option>';
-      qualSel.innerHTML = '';
 
-      // Audio
       if (film.audios) {
-        if (film.audios.vf) audioSel.innerHTML += `<option value="vf">Français (VF/Voice-over)</option>`;
-        if (film.audios.en) audioSel.innerHTML += `<option value="en">English (Anglais)</option>`;
+        if (film.audios.vf) audioSel.innerHTML += `<option value="vf">Français (VF)</option>`;
+        if (film.audios.en) audioSel.innerHTML += `<option value="en">English (VO)</option>`;
         if (film.audios.ja) audioSel.innerHTML += `<option value="ja">Japonais</option>`;
       }
 
-      // Sous-titres
       if (film.subtitles) {
         if (film.subtitles.fr) subSel.innerHTML += `<option value="fr">Français</option>`;
         if (film.subtitles.en) subSel.innerHTML += `<option value="en">English</option>`;
-        if (film.subtitles.ja) subSel.innerHTML += `<option value="ja">Japonais</option>`;
       }
 
-      // Qualités
       const defaultQual = film.quality || '1080p';
       qualSel.innerHTML = `
         <option value="1080p" ${defaultQual==='1080p'?'selected':''}>1080p</option>
@@ -1760,10 +1526,7 @@
         src = film.audios.vf || film.audios.en || film.audios.ja;
       }
 
-      const currentTime = player.currentTime || 0;
       player.src = src || '';
-      player.currentTime = currentTime;
-
       updateFilmTracks();
     }
 
@@ -1772,7 +1535,6 @@
       const subKey = document.getElementById('film-sub-select').value;
       const film = currentActiveFilm;
 
-      // Nettoyer les pistes existantes
       Array.from(player.querySelectorAll('track')).forEach(t => t.remove());
 
       if (subKey !== 'off' && film.subtitles && film.subtitles[subKey]) {
@@ -1796,12 +1558,10 @@
     }
 
     function changeFilmQuality() {
-      // Notification visuelle de la qualité sélectionnée
       loadFilmVideoSource();
       document.getElementById('film-active-player').play();
     }
 
-    /* LOGIQUE DE SÉRIE ET ÉPISODES */
     function renderSeriesSeasonsAndEpisodes(series, activeSeasonNum) {
       const tabsContainer = document.getElementById('view-series-seasons-tabs');
       const epListContainer = document.getElementById('view-series-episodes-list');
@@ -1875,23 +1635,16 @@
 
       audioSel.innerHTML = '';
       subSel.innerHTML = '<option value="off">Désactivés</option>';
-      qualSel.innerHTML = '';
 
-      // Audio
       if (ep.audios) {
-        if (ep.audios.vf) audioSel.innerHTML += `<option value="vf">Français (VF/Voice-over)</option>`;
-        if (ep.audios.en) audioSel.innerHTML += `<option value="en">English (Anglais)</option>`;
-        if (ep.audios.ja) audioSel.innerHTML += `<option value="ja">Japonais</option>`;
+        if (ep.audios.vf) audioSel.innerHTML += `<option value="vf">Français (VF)</option>`;
+        if (ep.audios.en) audioSel.innerHTML += `<option value="en">English (VO)</option>`;
       }
 
-      // Sous-titres
       if (ep.subtitles) {
         if (ep.subtitles.fr) subSel.innerHTML += `<option value="fr">Français</option>`;
-        if (ep.subtitles.en) subSel.innerHTML += `<option value="en">English</option>`;
-        if (ep.subtitles.ja) subSel.innerHTML += `<option value="ja">Japonais</option>`;
       }
 
-      // Qualités
       const defaultQual = ep.quality || '1080p';
       qualSel.innerHTML = `
         <option value="1080p" ${defaultQual==='1080p'?'selected':''}>1080p</option>
@@ -1909,13 +1662,10 @@
 
       let src = ep.audios ? ep.audios[audioKey] : null;
       if (!src && ep.audios) {
-        src = ep.audios.vf || ep.audios.en || ep.audios.ja;
+        src = ep.audios.vf || ep.audios.en;
       }
 
-      const currentTime = player.currentTime || 0;
       player.src = src || '';
-      player.currentTime = currentTime;
-
       updateEpisodeTracks();
     }
 
@@ -1963,90 +1713,6 @@
       document.getElementById('film-active-player').pause();
     }
 
-    /* AJOUTER ÉPISODES À UNE SÉRIE EXISTANTE */
-    function openAddMoreEpisodesModal() {
-      let catalog = JSON.parse(localStorage.getItem('palmx_catalog') || '[]');
-      let series = catalog.find(m => m.id === currentOpenedSeriesId);
-
-      if (!series) return;
-
-      const select = document.getElementById('add-more-season-select');
-      select.innerHTML = '';
-
-      series.seasons.forEach(s => {
-        const opt = document.createElement('option');
-        opt.value = s.seasonNum;
-        opt.innerText = `Saison ${s.seasonNum}`;
-        select.appendChild(opt);
-      });
-
-      const newSeasonOpt = document.createElement('option');
-      newSeasonOpt.value = series.seasons.length + 1;
-      newSeasonOpt.innerText = `+ Créer la Saison ${series.seasons.length + 1}`;
-      select.appendChild(newSeasonOpt);
-
-      document.getElementById('add-ep-modal').classList.add('show');
-    }
-
-    function closeAddEpModal() {
-      document.getElementById('add-ep-modal').classList.remove('show');
-      document.getElementById('add-more-ep-title').value = '';
-      document.getElementById('add-more-msg').innerText = '';
-    }
-
-    function saveNewEpisodeToSeries() {
-      const seasonNum = parseInt(document.getElementById('add-more-season-select').value);
-      const title = document.getElementById('add-more-ep-title').value.trim();
-
-      const audioVF = getSrcFromInputs('add-more-ep-vf-file', 'add-more-ep-vf-url');
-      const audioEN = getSrcFromInputs('add-more-ep-en-file', 'add-more-ep-en-url');
-      const audioJA = getSrcFromInputs('add-more-ep-ja-file', 'add-more-ep-ja-url');
-
-      const subFR = getSrcFromInputs('add-more-sub-fr-file', 'add-more-sub-fr-url');
-      const subEN = getSrcFromInputs('add-more-sub-en-file', 'add-more-sub-en-url');
-      const subJA = getSrcFromInputs('add-more-sub-ja-file', 'add-more-sub-ja-url');
-
-      const msgEl = document.getElementById('add-more-msg');
-
-      if (!title || (!audioVF && !audioEN && !audioJA)) {
-        msgEl.className = 'auth-msg error';
-        msgEl.innerText = "Spécifiez un titre et au moins une version vidéo (ex: VF).";
-        return;
-      }
-
-      let catalog = JSON.parse(localStorage.getItem('palmx_catalog') || '[]');
-      let seriesIndex = catalog.findIndex(m => m.id === currentOpenedSeriesId);
-
-      if (seriesIndex !== -1) {
-        let series = catalog[seriesIndex];
-        let targetSeason = series.seasons.find(s => s.seasonNum === seasonNum);
-
-        if (!targetSeason) {
-          targetSeason = { seasonNum: seasonNum, episodes: [] };
-          series.seasons.push(targetSeason);
-        }
-
-        targetSeason.episodes.push({
-          id: Date.now(),
-          title: title,
-          audios: { vf: audioVF, en: audioEN, ja: audioJA },
-          subtitles: { fr: subFR, en: subEN, ja: subJA },
-          quality: '1080p'
-        });
-
-        localStorage.setItem('palmx_catalog', JSON.stringify(catalog));
-
-        msgEl.className = 'auth-msg success';
-        msgEl.innerText = "Épisode rajouté avec succès !";
-
-        setTimeout(() => {
-          closeAddEpModal();
-          renderSeriesSeasonsAndEpisodes(series, seasonNum);
-        }, 1000);
-      }
-    }
-
-    /* TELECHARGEMENTS */
     function saveToDownloads(title, src) {
       if (!src) {
         alert("Aucune vidéo disponible à télécharger.");
@@ -2063,10 +1729,9 @@
       a.click();
       document.body.removeChild(a);
 
-      alert(`'${title}' a été ajouté à la section Téléchargements !`);
+      alert(`'${title}' a été ajouté aux Téléchargements.`);
     }
 
-    /* MENUS DÉROULANTS */
     function toggleLangMenu() {
       document.getElementById('account-dropdown').classList.remove('show');
       document.getElementById('lang-dropdown').classList.toggle('show');
